@@ -5,6 +5,104 @@
     <link>https://github.com/ZHENHUA001A307/HomeofComrades</link>
     <description>从 EPUB 自动生成的 RSS 订阅源</description>
         <item>
+    <title>网安知识 - 024 - 如何翻墙？——写在 BlogSpot 被封之后 {2018-12-26}.epub</title>
+    <description><![CDATA[<p style='color: #888;'>⏱ 预计阅读时间：31 分钟 (9189 字)</p><hr><h1><a href="../../index_origin.html" title="回到首页">如何翻墙？——写在 BlogSpot 被封之后 {2018-12-26}</a></h1>
+<div class="post-info"><span class="date-header">2009-05-16</span><a class="tag" href="../../tags/IT.html">IT</a> <a class="tag" href="../../tags/IT.E7BFBBE5A299.html">IT.翻墙</a> </div>
+<hr/>
+<div class="post">
+　　公元2009年5月的某天，BlogSpot 又一次撞墙，被 ＧＦW 封了。<a href="https://program-think.blogspot.com/">俺在 BlogSpot 上的博客</a>也遭受池鱼之殃，杯具啊杯具！当时为了让俺博客的读者能够继续访问，咱特地写了这个扫盲帖，全面普及一下翻墙的各种基本“姿势”。<br/>　　由于翻墙技术日新月异，本文也会不断更新。会翻墙的同学，请通过“<a href="how-to-break-through-gfw.html">这里</a>”看本文的最新版本。<a name="more"></a><!--program-think--><br/><a name="why"> </a><br/><h2 class="sigil_not_in_toc">★党国为啥要封网？咱们为啥要翻墙？</h2>
+<br/>　　为啥我党宁可得罪广大网民（早已超三亿）也要搞 ＧＦW 来进行网络封锁捏？简单地说，互联网上有很多信息，是党国不希望你看到的。通过ＧＦW，党国可以控制你能看到啥，不能看到啥。控制了信息渠道之后，党国可以很容易地忽悠你，对你进行洗脑，让你变成脑残。<br/>　　现在你明白了吧？只要你受制于 ＧＦW，你就没有“访问互联网的自由”，因而也没有“获取信息的自由”。但是俺始终认为：“<b>访问互联网的自由是网民的基本权利</b>”。所以，俺这些年来，一直在想办法普及翻墙姿势。如果你也认同上述观点，请你帮助传播本教程给周围的人，与 ＧＦW 斗争需要大伙儿的参与。<br/>　　由于本文主要讲翻墙技术，这个话题就不深入展开了。有兴趣的同学可以看看俺之前的几个帖子（在墙外）：<br/>《<a href="../07/party-pk-internet.html">党和互联网的较量</a>》<br/>《<a href="../10/use-people-war-to-anti-gfw.html">面对墙，我们所能做的就是——让 ＧＦW 陷入到人民战争的汪洋大海之中</a>》<br/><a name="gfw"> </a><br/><h2 class="sigil_not_in_toc">★扫盲——ＧＦW 是嘛玩意儿？</h2>
+<br/>　　考虑到某些网友从来不知“ＧＦW”为何物，俺通俗地扫盲一下。<br/>　　ＧＦW 就是我党为了加强对互联网的控制和封锁，下大力气、花大价钱搞出来的一个东东。这个东东部署在天朝互联网的国际出口。既然是花大价钱搞出来的，自然是很牛很强大。这个玩意儿具有如下主要功能：<br/><br/><h3 class="sigil_not_in_toc">◇DNS 欺骗（DNS 污染）</h3>
+<br/>　　“DNS 欺骗”洋文叫“DNS Spoofing”；“DNS 污染”又称为“域名缓存投毒”，洋文叫“DNS Cache Poisoning”。这两者是一个意思，只是叫法不同。<br/>　　如果你使用的是墙外的 DNS 服务器，那么，你每次进行 DNS 查询，都会要经过国际出口。这时候，ＧＦW 会通过该技术手段伪造 DNS 的查询结果——使得你查询到的网站 IP 是错误的。如此一来，你自然就无法该网站。<br/>　　顺便说一下，“DNS 欺骗”与“DNS 劫持”是两码事。“DNS 劫持”是指 DNS 服务器上的记录被人为修改成错误的。在天朝，很多国内的 ISP 会故意修改自己 DNS 服务器上的记录，把某些敏感网站的记录修改成错误的。<br/>　　关于“DNS 污染”，俺后来还专门写过一篇《<a href="../../2014/01/dns.html">扫盲 DNS 原理，兼谈“域名劫持”和“域名欺骗/域名污染”</a>》。<br/><br/><h3 class="sigil_not_in_toc">◇IP 封锁（IP 黑名单）</h3>
+<br/>　　顾名思义，就是屏蔽某些 IP 地址。<br/>　　如果你要访问的网站，其网站的 IP 被 ＧＦW 列入 IP 黑名单中。那么该网站就无法正常访问。<br/><br/><h3 class="sigil_not_in_toc">◇敏感词过滤（关键字过滤）</h3>
+<br/>　　ＧＦW 会维护一个很长很长的敏感词列表，并且该列表是经常更新的。一些政治方面比较敏感的词汇，都位于该列表上。<br/>　　如果你访问的网页中包含<b>任何一个</b>敏感词，那么 ＧＦW 会通过技术手段屏蔽该页面，让你看不到。<br/><br/>　　通过以上几项功能，它可以有效阻止网民看到党不想让你看到的信息。如果你比较好奇，想了解更详细的关于 ＧＦW 的介绍，请翻墙看“<a href="https://zh.wikipedia.org/wiki/GFW" rel="nofollow" target="_blank">这里</a>”。<br/><a name="dns"> </a><br/><h2 class="sigil_not_in_toc">★先从简单的“修改 DNS 服务器”说起</h2>
+<br/>　　这招是翻墙入门者首先要知道的技能。<br/>　　为啥要“修改 DNS”捏？主要是用来防止“域名劫持”（但是【不能】防“域名污染”）。“域名劫持”的勾当，貌似国内很多运营商（比如上海电信）都干过。所以捏，尽量不要用你所在运营商提供的 DNS 服务器，不保险。毕竟国内的运营商都受到党国的控制，估计他们也身不由己。<br/>　　俺推荐几个国外的、知名的、人品好的 DNS 给大伙儿参考。<br/>　　Google 不但是牛逼的公司，而且还很人性化——它提供了如下两个很好记的 DNS 服务器。<br/>8.8.8.8<br/>8.8.4.4<br/><br/>　　为了防止 ＧＦW 把 Google 的 DNS 服务器封杀掉，大伙儿还得多再备份几个。下面这些 DNS 的 IP 可就没 Google 的 DNS 那么好记了。<br/>OpenDNS：<br/>208.67.222.222<br/>208.67.220.220<br/><br/>台湾中华电讯的 DNS：<br/>168.95.192.1<br/>168.95.192.2<br/><br/>香港宽频的 DNS：<br/>203.80.96.9<br/>203.80.96.10<br/><br/>　　至于如何修改你电脑的 DNS 服务器，应该不用俺教了吧？不会的同学，自己上 Google 去查。<br/><a name="hosts"> </a><br/><h2 class="sigil_not_in_toc">★再来说说“修改 hosts 文件”</h2>
+<br/>　　刚才介绍了“修改 DNS 服务器”。但是刚才俺也说了，“修改 DNS 【无法】对付域名污染”。咋办捏？要对付域名污染，有一个比较简单的方法——修改 hosts 文件。下面来介绍一下。<br/>　　大部分操作系统都支持 hosts 文件，它提供了 IP 的“别名机制”。这种基于 IP 的别名机制，既可以用来对抗前面提到的“域名污染”，也可以对付“域名劫持”。<br/><br/><h3 class="sigil_not_in_toc">◇如何设置</h3>
+<br/>　　如果你使用 Windows 系统，可以使用如下命令打开 hosts 文件。<br/><b>notepad %SystemRoot%\system32\drivers\etc\hosts</b><br/><br/>　　如果你使用 Linux 系统或苹果的 Mac 系统，可以用如下命令打开。<br/><b>vi /etc/hosts</b><br/><br/>　　打开之后，把那些被封锁的网站的 IP 及域名加入 hosts 文件（每行一个）即可。比方说，上述提到的 Google Drive，它的 IP 是 74.125.227.198，那我们只要在 hosts 加入如下一行：<br/><u>74.125.227.198 drive.google.com</u><br/>　　然后就可以像往常一样使用基于 HTTPS 协议的 Google Drive 了。<br/><br/><h3 class="sigil_not_in_toc">◇优缺点分析</h3>
+<br/>　　使用此招数的好处在于：<br/>(1) 非常傻瓜化——不需要安装软件；<br/>(2) 性能很好——当中无需经过代理的中转。<br/>　　但是有好必有坏，此招数的坏处也很明显：<br/>(1) 如果你访问的是 HTTP 协议的网页，且内容包含敏感词，那么此招数照样没戏；<br/>(2) 如果 ＧＦW 不光封域名，还封 IP，那么此招数也还是没戏；<br/>(3) 如果某个网站的 IP 已经变化了，那你就要与时俱进地修改你的 hosts 文件，煞是麻烦。<br/><br/>　　综上所述，修改hosts文件的法子，只能用于诸如 Google Drive 之类影响力巨大的网站。因为 Google Drive 用的人已经比较多，ＧＦW 不好意思把整个域名及 IP 段都封杀。因此，只好选择性地封锁 HTTPS 协议，而对 HTTP 协议网开一面（HTTP 协议是明文的，便于 ＧＦW 进行关键词过滤）。这种情况下，“修改 hosts 文件”的招数就可以派上用场了。<br/><a name="web-proxy"> </a><br/><h2 class="sigil_not_in_toc">★加密 Web 代理</h2>
+<br/>　　刚才提到了“修改 Hosts 的局限性”——无法对抗 IP 黑名单。如果某个网站的 IP 地址被列入 GFW 的黑名单，修改 Hosts 文件是没戏的。咋办捏？<br/>　　不要怕，还有另外一个东东可以穿墙，那就是“加密 Web 代理”。<br/>　　基于 HTTPS 方式的加密 Web 代理，主要好处是：无需安装其它软件，光靠浏览器就可以搞定。不过捏，HTTPS 代理一旦用的人多了，容易引起 ＧＦW 的注意，死期也就不远了（正所谓人怕出名猪怕壮）。如果你想用这招，就得经常去逛一些代理网站。<br/>　　本来俺在这个翻墙教程中，会附带放几个 HTTPS 的 web 代理，便于大伙儿直接使用。可惜自从2010年3季度，ＧＦW 开始盯上俺了（貌似 ＧＦW 的走狗，也在看俺的博客）。所以捏，俺就不把具体的加密 Web 代理放出来了，以免便宜了那些走狗。想要的同学，自己去 Google 一下。<br/><a name="proxy"> </a><br/><h2 class="sigil_not_in_toc">★代理软件</h2>
+<br/>　　<b>代理软件可是本教程的重点章节，要仔细看哦！</b><br/><br/><h3 class="sigil_not_in_toc">◇代理的工作原理</h3>
+<br/>　　代理工具的翻墙原理是这样滴：<br/>　　假设你想通过翻墙代理访问某个被墙的网站（比如反动网站、黄色网站:），这时候会经历如下几个步骤：<br/>(1) 你的上网软件（通常是浏览器）会把数据发送给你电脑中的代理工具；<br/>(2) 该工具把数据进行【<b>加密</b>】，然后发送给【<b>国外</b>】的某个代理服务器；<br/>(3) 该代理服务器把数据解密，然后发送给你要访问的网站。<br/>(4) 从该网站回传的数据，也是经过上述途径，最终回到你的浏览器。<br/><br/><h3 class="sigil_not_in_toc">◇代理的分类</h3>
+<br/>　　按照是否加密，代理软件可分为加密代理和不加密代理2种（这不是废话嘛:）。为了避开 ＧＦW 敏感词过滤，咱必须得使用<b>加密</b>代理软件。<br/>　　按照协议类型，常见的有 HTTP 代理和 SOCKS 代理。如果你纯粹用浏览器翻墙，HTTP 代理就够用了；如果你还需要让其它软件（比如MSN）翻墙，那就得用SOCKS代理。<br/><br/><h3 class="sigil_not_in_toc">◇代理工具的获取</h3>
+<br/>　　俺下面提到的很多软件，官方站点都已经被墙。为了便于大伙儿下载，俺提供了“基于 BT Sync 的【免翻墙】自动同步”，以方便那些暂时还无法翻墙的网友。<br/>　　首先，你需要安装 BT Sync，然后使用如下密钥，就可以【自动】同步俺分享的【多款翻墙软件】。<br/><blockquote style="font-family:Courier,monospace;"><b>各种翻墙软件的同步密钥 BTLZ4A4UD3PEWKPLLWEOKH3W7OQJKFPLG</b></blockquote>
+　　从来没用过 BT Sync 的同学，请先看《<a href="../../2015/01/BitTorrent-Sync.html">扫盲 BT Sync——不仅是同步利器，而且是【分布式】网盘</a>》。<br/><br/><h3 class="sigil_not_in_toc">◇代理工具的注意事项</h3>
+<br/>　　由于使用加密的方式穿透 ＧＦW，所以性能上肯定会打折扣滴。建议大伙儿同时用两个浏览器：一个浏览普通的网站，另一个配置好代理浏览被墙的网站。对于使用 Firefox 或 Chrome 的同学，也可以安装一些第三方的代理插件（比如：<a href="https://autoproxy.org/" rel="nofollow" target="_blank">AutoProxy</a>、<a href="https://getfoxyproxy.org/" rel="nofollow" target="_blank">FoxyProxy</a>），用来自动切换代理模式和非代理模式。<br/>　　如今很多翻墙工具的 exe 可执行文件都自带了“数字签名”。如果你<b>不是</b>从官方网站下载该文件，最好查看一下数字签名，以确保该文件没有被篡改（比如感染病毒）。至于如何验证数字签名，请翻墙看“<a href="../../2010/02/introduce-digital-certificate-and-ca.html#verify_file">这里</a>”。<br/><br/><h3 class="sigil_not_in_toc">◇赛风</h3>
+<br/>　　赛风也是老牌的翻墙软件。早期的“赛风2”仅提供网页代理。从“赛风3”开始，推出了客户端软件。这个客户端很牛B，同时支持基于 SSH 的代理模式和VPN模式（关于VPN模式，本文后续会介绍）。而且，它也是单个绿色软件，也很小巧（几兆），且带有数字签名。（如何验证数字签名，请翻墙看“<a href="../../2010/02/introduce-digital-certificate-and-ca.html#verify_file">这里</a>”）<br/>　　如果赛风使用 VPN 模式翻墙，你所有的网络软件<b>无需任何设置</b>，就能跟着翻墙；如果赛风使用代理模式翻墙，则开启两个端口：“8080”端口用于HTTP代理，“1080”端口用于 SOCKS 代理。<br/>　　更多关于赛风的详细介绍，请看俺博客的帖子《<a href="../../2011/10/gfw-psiphon.html" target="_blank">双管齐下的赛风3</a>》<br/>　　官方站点在“<a href="https://psiphon.ca/" rel="nofollow" target="_blank">这里</a>”（已经被墙）。<br/>　　【免翻墙】获取的方法：<br/>　　你只需往赛风官网提供的邮箱 <u>get@psiphon3.com</u> 发送任意邮件，立马就能收到自动回复。<b>在回信中，直接就附上了赛风的可执行程序</b>（如果邮件里的附件名叫“psiphon3.asc”，改为“psiphon3.exe”即可直接运行）。<br/><br/><h3 class="sigil_not_in_toc">◇蓝灯</h3>
+<br/>　　蓝灯是2013年才诞生的后起之秀。刚开始的 1.x 版本，依赖于“邀请机制”，不适合大规模推广。<br/>　　它在2015年8月发布 2.0 版本，开始提供傻瓜化的“一键式翻墙”。俺尝试了之后，感觉不错，就在博客上推荐了——参见《<a href="../../2015/08/gfw-lantern.html">Lantern（蓝灯）——开源且跨平台的翻墙代理</a>》。<br/>　　蓝灯需要安装才能使用，不过安装包很小巧（几兆），而且自带数字签名。与其它翻墙代理相比，蓝灯的特色是——开源且跨平台。这方面跟 TOR 有点像。<br/>　　它使用 HTTP 代理的方式，端口是“8787”。<br/>　　官方站点在“<a href="https://getlantern.org/" rel="nofollow" target="_blank">这里</a>”（已经被墙）。<br/>　　【免翻墙】获取的方法：<br/>　　<a href="https://github.com/getlantern/lantern-binaries" rel="nofollow" target="_blank">https://github.com/getlantern/lantern-binaries</a><br/>　　上述链接位于 Lantern 官方的 GitHub 帐号（到目前为止，GitHub 全站都可以【免翻墙】访问），该页面同时提供三大桌面操作系统（Windows、Linux、Mac）的安装包。<br/><br/><h3 class="sigil_not_in_toc">◇TOR</h3>
+<br/>　　TOR 也叫“洋葱网络”。网上常听人说的“带套（TOR 的谐音）穿墙”就是指它。这玩意儿是一个开源项目，用于保护个人上网的自由和隐私。它的工作原理可以参见“<a href="https://zh.wikipedia.org/wiki/TOR" rel="nofollow" target="_blank">这里</a>”。<br/>　　由于 TOR 的名气太大，ＧＦW 特别关照它。很多 TOR 的网桥中继都被 ＧＦW 列入 IP 黑名单，导致 TOR 无法单独使用。不过从2014年10月份，TOR 开始内置了 meek 插件，该插件重新让 TOR 复活（又可以独立联网了）。具体教程参见《<a href="../../2014/10/gfw-tor-meek.html">TOR 已复活——meek 流量混淆插件的安装、优化、原理</a>》。<br/>　　【免翻墙】获取的方法：<br/>　　大伙儿可以通过邮件方式获取 TOR。具体如下：<br/>　　先发送主题为“help”的<font color="red">纯文本</font>邮件到 <u>gettor@torproject.org</u>，收到回信后根据邮件的提示<b>再回复一次</b>，即可在你的邮箱中收取 TOR 的软件包。强烈推荐使用 Gmail，以确保最佳效果。尽量别使用国内的邮箱，切记！<br/><br/>　　另外，还可以用 TOR 跟其它翻墙工具搭配，构造双重代理。双重代理的隐匿性非常好，如果你经常在网上发表敏感言论，要记得使用双重代理。关于双重代理的扫盲教程，请看俺写的系列博文《<a href="../../2010/04/howto-cover-your-tracks-0.html">如何隐藏你的踪迹，避免跨省追捕</a>》。<br/><br/><h3 class="sigil_not_in_toc">◇自由门</h3>
+<br/>　　自由门（来自“动态网”），这是一家具有政治背景的公司专门开发来突破 ＧＦW 的。它的版本升级比较频繁，最好经常更新到最新版本，以获取最佳的破网效果。<br/>　　自由门是绿色软件，不大（几兆），带有数字签名的。<br/>　　它使用 HTTP 代理的方式，端口是“8580”。<br/>　　官方站点在“<a href="http://dongtaiwang.com/" rel="nofollow" target="_blank">这里</a>”（很早就被墙）。<br/>　　【免翻墙】获取的方法：<br/>　　通过发邮件给“ <u>freeget.one@gmail.com</u> ”来获取它（这个邮箱地址是自由门官方提供的）。<br/><br/><h3 class="sigil_not_in_toc">◇无界</h3>
+<br/>　　“无界”的背景、使用方式都很类似于“自由门”。从2011年11月开始，无界采用了新的翻墙机制，翻墙能力有显著提升。相关的详细介绍，请看俺专门写的帖子《<a href="../../2011/12/gfw-wujie.html">新版本无界——赛风3失效后的另一选择</a>》。<br/>　　无界使用 HTTP 代理的方式，端口号是“9666”。<br/>　　官方站点在“<a href="http://www.wujieliulan.com/" rel="nofollow" target="_blank">这里</a>”（很早就被墙）。<br/><br/><h3 class="sigil_not_in_toc">◇I2P</h3>
+<br/>　　I2P 是非常类似于 TOR 的翻墙工具（TOR 叫洋葱路由，而 I2P 是大蒜路由）。它俩的主要用途是“隐匿身份”，翻墙只是顺带的附加用途。<br/>　　I2P 的安全性和坚挺程度比 TOR 更强，换来的代价是速度很慢。所以 I2P 主要是用来作为备用翻墙工具。当你常用的工具失效时，就可以拿它来救急。<br/>　　I2P 提供的代理有两个端口，“4444”端口用来代理 HTTP 协议，“4445”端口用来代理 HTTPS 协议。在配置浏览器代理的时候要小心，别搞混了。具体配置方法请看俺写的《<a href="../../2012/06/gfw-i2p.html">简单扫盲 I2P 的使用</a>》。<br/>　　官方站点在“<a href="https://geti2p.net/" rel="nofollow" target="_blank">这里</a>”。<br/><br/><a name="vpn"> </a><br/><h2 class="sigil_not_in_toc">★VPN 客户端</h2>
+<br/>　　说完了代理工具，再来介绍一下 VPN 客户端软件。<br/><br/><h3 class="sigil_not_in_toc">◇VPN 翻墙的原理</h3>
+<br/>　　VPN 其实也是在本地与远程的 VPN 服务器之间建立一个加密通道，所有数据都经由国外的 VPN 服务器到达目的网站。但是，与代理软件不同，VPN 软件会在你的系统中虚拟出一个网卡来。然后，你上网的应用程序（不管是何种类型），都可以通过这个虚拟网卡和 VPN 服务端进行数据传输。<br/>　　有些提供 VPN 服务的公司，直接使用开源的、大名鼎鼎的 OpenVPN 作为客户端——你可以到“<a href="http://openvpn.net/" rel="nofollow" target="_blank">这里</a>”下载；还有一些则使用自己公司开发的客户端——因此你需要到它的官方站点下载。下面，俺列举一些可以免费使用的VPN。<br/><br/><h3 class="sigil_not_in_toc">◇VPN Gate</h3>
+　　这是2013年3月发布的新型翻墙工具，由日本的筑波大学开发。这款 VPN 的亮点在于：它的服务器由世界各地的志愿者提供，是分布式的。这样一来，ＧＦW 就难以彻底封杀。使用它翻墙，速度快而且稳定。这是目前最理想的免费 VPN 翻墙工具。<br/>　　它的中文版官网在“<a href="https://www.vpngate.net/cn/" rel="nofollow" target="_blank">这里</a>”（需要翻墙才能访问）。由于 VPN Gate 的安装包比较大（有三十多兆），而且更新非常频繁，所以俺没有提供墙内下载。要下载的同学，可以先用 Web 代理（前面介绍过）上它的官网，它的官网上有镜像站点的列表。这些镜像站点每个小时都会变化，以规避 ＧＦW 的封杀。从镜像站点下载安装包，<b>无需翻墙</b>。<br/>　　关于 VPN Gate 的更多介绍，请看俺写的教程《<a href="../../2013/04/gfw-vpngate.html">扫盲 VPN Gate——分布式的 VPN 服务器</a>》<br/><br/><a name="proxy-vs-vpn"> </a><br/><h2 class="sigil_not_in_toc">★代理工具和 VPN 软件的总结</h2>
+<br/>　　由于代理工具和 VPN 软件比较类似，俺稍微对比总结一下。<br/><br/><h3 class="sigil_not_in_toc">◇代理工具的优点 &amp; VPN 的缺点</h3>
+<br/>　　大部分代理工具都是免费的，而 VPN 软件很多是商用软件，要花钞票滴。少数不花钱的VPN，也有使用期限或者流量限制。<br/>　　另外，由于 VPN 需要在你的系统中安装虚拟网卡，因此VPN软件都不是绿色软件，且多半需要管理员权限才能安装。这对于俺这种偏好绿色软件的用户来说，也是一个明显的缺点。<br/><br/><h3 class="sigil_not_in_toc">◇VPN 的优点 &amp; 代理工具的缺点</h3>
+<br/>　　由于 VPN 虚拟出一个网卡，你使用的各种软件（浏览器/聊天工具/邮件客户端）<b>无需任何设置</b>，就可以直接通过这个虚拟网卡传输数据。这是VPN的一大优点。<br/><br/><h3 class="sigil_not_in_toc">◇没有绝对坚挺的工具</h3>
+<br/>　　2010年之前，俺一直以为 TOR 是很坚挺滴。然而，残酷的事实让俺认识到——TOR 也有疲软的时候（从2010年3月初开始，TOR 就开始不稳定，几乎没法用了）。纵观这几年，几乎每一款翻墙工具都有过被封杀的纪录。因此，为了能够长期翻墙，大伙平时一定要多备几种不同的代理或 VPN 工具，千万别在一棵树上吊死。<br/><br/><h3 class="sigil_not_in_toc">◇一览表</h3>
+<br/>　　为了让大伙儿看得更直观，俺整理了如下表格。<br/><center><table border="1" cellpadding="3" cellspacing="0"><tbody><tr><th>名称</th>
+<th>版本</th>
+<th>官方网站</th>
+<th>翻墙方式</th>
+<th>类型</th>
+<th>是否绿色</th>
+</tr>
+<tr><td>赛风</td>
+<td>3.95</td>
+<td><a href="http://psiphon.ca/" rel="nofollow" target="_blank">这里</a></td>
+<td>HTTP代理，端口号自定义<br/>SOCKS代理，端口号自定义<br/>VPN</td>
+<td>开源软件<br/>免费软件</td>
+<td>是</td>
+</tr>
+<tr><td>蓝灯</td>
+<td>2.0.1</td>
+<td><a href="https://getlantern.org/" rel="nofollow" target="_blank">这里</a></td>
+<td>HTTP代理，端口号8787</td>
+<td>开源软件<br/>免费软件</td>
+<td>否</td>
+</tr>
+<tr><td>自由门</td>
+<td>7.5.4</td>
+<td><a href="http://dongtaiwang.com/" rel="nofollow" target="_blank">这里</a></td>
+<td>HTTP代理，端口号8580</td>
+<td>免费软件</td>
+<td>是</td>
+</tr>
+<tr><td>无界</td>
+<td>15.01</td>
+<td><a href="http://www.wujieliulan.com/" rel="nofollow" target="_blank">这里</a></td>
+<td>HTTP代理，端口号9666</td>
+<td>免费软件</td>
+<td>是</td>
+</tr>
+<tr><td>I2P</td>
+<td>0.9.21</td>
+<td><a href="http://www.i2p2.de/" rel="nofollow" target="_blank">这里</a></td>
+<td>HTTP代理，端口号4444<br/>HTTPS代理，端口号4445</td>
+<td>开源软件<br/>免费软件</td>
+<td>是</td>
+</tr>
+</tbody>
+</table></center>
+　　再次唠叨一下：表格中的软件，俺都提供了“基于 BT Sync 的【免翻墙】自动同步”，以方便那些暂时还无法翻墙的网友。<br/>　　首先，你需要安装 BT Sync，然后使用如下密钥，就可以【自动】同步俺分享的【多款翻墙软件】。<br/><blockquote><b>各种翻墙软件的同步密钥 BTLZ4A4UD3PEWKPLLWEOKH3W7OQJKFPLG</b></blockquote>
+<a name="mobile"> </a><br/><h2 class="sigil_not_in_toc">★手机翻墙</h2>
+<br/>　　眼下智能手机大为普及，因此手机翻墙也就提上议事日程。下面介绍几种常见的手机翻墙方法<br/><br/><h3 class="sigil_not_in_toc">◇代理软件</h3>
+<br/>　　手机系统也可以运行翻墙代理。比如无界、赛风、TOR 都有提供了手机版。<br/><br/><h3 class="sigil_not_in_toc">◇VPN</h3>
+<br/>　　智能手机上，也可以跑 VPN 客户端。这样，就可以让手机通过 VPN 翻墙。以广受欢迎的 Android 为例，它支持 OpenVPN、PPTP、L2TP 等多种类型的 VPN。由于 VPN 前面刚介绍过，此处不再啰嗦。<br/>　　说到手机上的 VPN 翻墙，建议大伙儿尝试一下 fqrouter。关于这款工具在天朝之内已经广为使用，很傻瓜而且稳定性也不错。它的扫盲教程请看《<a href="../../2014/07/gfw-fqrouter.html">fqrouter——安卓系统翻墙利器（免 ROOT）</a>》。<br/><br/><h3 class="sigil_not_in_toc">◇手机浏览器</h3>
+<br/>　　手机浏览器为啥能穿墙捏？大致原理是这样滴：由于手机对于网络流量比较敏感，为了尽量压缩网络流量，某些手机浏览器采用代理服务器的方式运作。比如当你企图访问某个网页时，浏览器并不是直接向该网站请求数据，而是通过手机浏览器对应的一个代理服务器去请求，然后由代理服务器拿到的数据进行压缩和优化，然后再回传给手机浏览器。<br/>　　采用上述方式的手机浏览器，如果代理服务器设置在国外，是有希望突破 ＧＦW 滴。由于党国的封锁越发严厉，很多手机浏览器默认的代理服务器都被屏蔽了。因此，要通过手机浏览器翻墙，需要通过修改浏览器软件，让它不使用默认的代理服务器，改用你指定的服务器。<br/>　　不同的手机浏览器，改服的办法也不尽相同。限于篇幅，俺不再作详细介绍，仅给出几款手机浏览器改服的文章。<br/><a href="https://www.chinagfw.org/2011/05/opera-miniucweb.html" rel="nofollow" target="_blank">常用手机浏览器（Opera Mini、UCWeb）改服方法</a><br/><a href="https://www.chinagfw.org/2011/04/javaoperaminiucweb.html" rel="nofollow" target="_blank">手机翻墙方法——Java版Opera Mini和UCWeb改国外服务器</a><br/><a name="others"> </a><br/><h2 class="sigil_not_in_toc">★其它的资源</h2>
+<br/>　　由于翻墙破网的技术层出不穷，为了与时俱进，咱还得不断学习。下面介绍几个相关的博客。<br/><br/><h3 class="sigil_not_in_toc">◇俺的博客</h3>
+<br/>　　首先，厚着脸皮给俺自个儿作个广告 :-)<br/>　　俺如果发现什么新的翻墙技巧，会在第一时间发到俺的 Blog 或 Twitter 上。欢迎大伙儿订阅俺的博客（订阅地址：<a href="https://feeds2.feedburner.com/programthink" target="_blank"><b>https://feeds2.feedburner.com/programthink</b></a>），也可以在推特上 Follow 俺（<a href="https://twitter.com/programthink" target="_blank"><b>@ProgramThink</b></a>）。<br/>　　如果你看完本帖后，对翻墙还是有疑问、或者对本教程有什么补充和建议，可以到<a href="https://program-think.blogspot.com/">俺博客站点</a>留言，也可以给俺 Email（<a href="mailto:program.think@gmail.com" target="_blank"><b>program.think@gmail.com</b></a>）。俺会尽可能帮你搞定翻墙难关。如果你发现本文有哪个链接打不开，也请通知俺。<br/><br/><h3 class="sigil_not_in_toc">◇ＧＦW blog</h3>
+<br/>　　接着，隆重推荐 ＧＦW 的专题 blog，它的订阅地址是：“<a href="https://feeds2.feedburner.com/chinagfw" rel="nofollow" target="_blank">https://feeds2.feedburner.com/chinagfw</a>”。<br/>　　另外，还可以访问它的 Google Group，地址是：“<a href="https://groups.google.com/group/gfw-blog" rel="nofollow" target="_blank">https://groups.google.com/group/gfw-blog</a>”。这个Group已经被封，推荐请用靠谱的“博客阅读器”订阅。<br/><br/><h3 class="sigil_not_in_toc">◇维基百科的一些资料</h3>
+<br/>　　维基百科上的好东东，那是相当滴多啊！推荐几篇相关的文章给大伙儿瞅瞅：“<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%A1%E6%9F%A5" rel="nofollow" target="_blank">中国网络審查</a>”、“<a href="https://zh.wikipedia.org/wiki/%E7%AA%81%E7%A0%B4%E7%BD%91%E7%BB%9C%E5%AE%A1%E6%9F%A5" rel="nofollow" target="_blank">突破网络審查</a>”。<br/><a name="end"> </a><br/><h2 class="sigil_not_in_toc">★结尾</h2>
+<br/>　　啰嗦了这么长的篇幅，基本上把常用的招数都介绍过了。最后，借用一下狄更斯写于《双城记》的名言：<br/><blockquote>这是最好的时代，也是最坏的时代；<br/>这是智慧的年代，也是愚蠢的年代；<br/>这是信仰的时期，也是怀疑的时期；<br/>这是光明的季节，也是黑暗的季节；<br/>这是希望的春天，也是失望的冬天；<br/>大伙儿面前应有尽有，大伙儿面前一无所有；<br/>大伙儿正在直登天堂；大伙儿正在直落地狱。</blockquote>
+<br/>　　祝愿墙内的网友们都能顺利掌握翻墙姿势，早日呼吸到互联网上自由的空气！<div class="blogger-post-footer">
+</div>
+</div>
+]]></description>
+    <pubDate>Tue, 04 Aug 2026 02:35:39 +0000</pubDate>
+    <guid isPermaLink="false">24</guid>
+</item>
+<item>
     <title>管理科学 - 023 - 如何用【互联网】进行“反洗脑”和“政治启蒙”——分享若干个人经验.epub</title>
     <description><![CDATA[<p style='color: #888;'>⏱ 预计阅读时间：18 分钟 (5138 字)</p><hr><h1><a href="../../index_origin.html" title="回到首页">如何用【互联网】进行“反洗脑”和“政治启蒙”——分享若干个人经验</a></h1>
 <div class="post-info"><span class="date-header">2014-01-29</span><a class="tag" href="../../tags/E5BF83E79086E5ADA6.html">心理学</a> <a class="tag" href="../../tags/E694BFE6B2BB.html">政治</a> <a class="tag" href="../../tags/E694BFE6B2BB.E79C9FE79086E983A8.html">政治.真理部</a> </div>
@@ -773,31 +871,6 @@
 ]]></description>
     <pubDate>Thu, 28 May 2026 02:55:43 +0000</pubDate>
     <guid isPermaLink="false">10</guid>
-</item>
-<item>
-    <title>管理科学 - 009 - 用提问来促进思维——兼谈【非】技术领域的 WHAT HOW WHY 三部曲.epub</title>
-    <description><![CDATA[<p style='color: #888;'>⏱ 预计阅读时间：15 分钟 (4351 字)</p><hr><h1><a href="../../index_origin.html" title="回到首页">用提问来促进思维——兼谈【非】技术领域的 WHAT HOW WHY 三部曲</a></h1>
-<div class="post-info"><span class="date-header">2012-03-07</span><a class="tag" href="../../tags/E5ADA6E4B9A0E696B9E6B395.html">学习方法</a> <a class="tag" href="../../tags/E5ADA6E4BC9AE6809DE88083.html">学会思考</a> </div>
-<hr/>
-<div class="post">
-　　在<a href="../02/microblog-and-time-management.html">前一篇博文</a>里，俺主要是从“时间管理”的角度，来阐述微博的弊端。其实微博还有另一个弊端：纵容快餐文化而导致【思考不够深入】。所以，俺今天来聊一下，如何用提问的方式促进深度思考。顺便也聊聊【WHAT HOW WHY 三部曲】在【非】技术领域的应用。<br/><a name="more"></a><!--program-think--><br/><br/><h2 class="sigil_not_in_toc">★认知的过程</h2>
-<br/>　　稍微了解“<a href="https://zh.wikipedia.org/wiki/%E8%AA%8D%E7%9F%A5%E5%BF%83%E7%90%86%E5%AD%B8" rel="nofollow" target="_blank">认知心理学</a>”的网友应该知道：我们对某个事物的认识，总是“由浅到深”。虽然同样是由浅到深，但每个人思考的深度却千差万别。不幸的是，大多数人在看待某个东西（事物、问题、现象）的时候，都仅仅停留在浅层次。<br/>　　为啥会这样捏？一个很重要的原因就是：<b>大多数人不善于提问</b>。<br/>　　说到这儿，俺又要第 N 次抨击天朝的教育制度了。在天朝的中小学教育中，根本就【没】教会学生，该如何提问、该如何质疑、该如何反思。为啥会这样捏？因为<b>天朝的教育，主要是为了【愚民】</b>，愚民的主要目的是为了维护党的领导（民众越愚昧，党就越容易统治）。<br/>　　考虑到抨击教育制度不是本文的重点，就此打住。<br/>　　好，言归正传。如何才能掌握提问的窍门捏？如何才能在提问中加深思考捏？俺总结了一个比较简单的提问三部曲：WHAT、HOW、WHY。通过这个三部曲，你可以一步步地从事物的表象深入到事物的本质。<br/><br/><br/><h2 class="sigil_not_in_toc">★WHAT HOW WHY 的步骤</h2>
-<br/>　　为啥本文的副标题是“兼谈【非】技术领域的 WHAT HOW WHY 三部曲”？因为俺在多年前（2009）已经写过一篇博文《<a href="../../2009/02/study-technology-in-three-steps.html">学习技术的三部曲：WHAT HOW WHY</a>》。在那篇博文里，主要是介绍三部曲在技术领域（理工科）的应用。考虑到俺博客的读者中，有越来越多的人不是 IT 行业。所以，俺今天侧重介绍一下，这个三部曲在社会科学（文科）方面的应用。<br/><br/><h3 class="sigil_not_in_toc">◇WHAT</h3>
-<br/>　　当我们开始了解某个事物的时候，总是先从 WHAT 类型的问题开始入手。而所谓的【WHAT】也就是“What is it?”<br/>　　在这个层面，你首先要了解的，就是某个事物所涉及的：时间、地点、当事人以及该事件的大致经过。要了解这些，其实比较容易——通过跟别人交流，或阅读各类媒体（网络、电视、报刊），就可以对某个事物有一个初步的、肤浅的、表面的认识。<br/>　　在 WHAT HOW WHY 这3个层次中，这个层次是最简单的——因为你只需运用【记忆力】即可解决。对大多数人而言，只要智力没啥缺陷，都能达到这个层次。达到这个层次虽然很简单，但你千万要记住：<b>从 WHAT 类型的问题得到的答案，通常只反映出事情的表面现象</b>。而表象跟本质，往往是不同的，甚至是相反的。如果你仅仅停留在 WHAT 层面，很可能会被【表象】所误导。<br/>　　在《<a href="../02/microblog-and-time-management.html">为啥俺不常用微博——兼谈时间管理心得</a>》一文，俺提到微博传递的信息过于肤浅——意思就是说，（大部分）微博传递的信息仅仅停留在 WHAT 层面。<br/><br/><h3 class="sigil_not_in_toc">◇HOW</h3>
-<br/>　　所谓的【HOW】就是“How to do?”。<br/>　　因为本文侧重讲社会学领域的话题。而社会学领域，“人”往往是关键因素。所以，你首先要思考的就是：当事人是【如何】参与某个事件的？（此处所说的“当事人”，可以是某个具体的人，也可以是某个群体）<br/>　　当然啦，很多事物的发展，除了有“当事人”的因素，还有其它一些因素（比如：文化因素、法律因素、经济因素、科技因素等等）。所以，你还要问：除了当事人，其它因素是<b>如何</b>起作用的？<br/>　　最后，你还要继续问：在各种因素的作用下，事件是【如何】一步步发展的？该事件内部是<b>如何</b>运作的？......<br/>　　和 WHAT 层次不同的是，HOW 层次光靠记忆力是远远不够滴。你还需要具备一定的分析推理能力，还需要懂得查阅相关资料，才能搞明白上述 HOW 类型的问题。<br/><br/><h3 class="sigil_not_in_toc">◇WHY</h3>
-<br/>　　当你能够比较透彻地厘清 HOW 层面的各类问题，就可以开始思考 WHY 类型的问题了。<br/>　　所谓的【WHY】类型问题，俺举几个简单的例子：<br/>某个当事人【<b>为什么</b>】会这么干而不是那么干<br/>【<b>为什么</b>】是这个因素起作用而不是那个因素起作用<br/>事件【<b>为什么</b>】会朝着这个方向发展而不是朝着另外的方向发展<br/>......<br/>　　WHY 类型的问题有个特点：这类问题很发散且数量很多。因此，对于某个具体的事物，总可以提出几十个（甚至上百个） WHY 类型的问题。在这么多个问题中，只有少数几个是【切中要害】的。<b>所谓“切中要害”的问题，就是那些会把你引向该事物【本质】的问题</b>。<br/>　　肯定有人要问，如何才能直接提出切中要害的问题？老实说，这没有捷径。只有经常思考的人，才能逐渐掌握这种“直接命中要害”的思维能力。<br/>　　一旦提出 WHY 问题，接下来自然就是寻找答案。<br/>　　显然，WHY 类型的问题比 HOW 类型的问题更难回答——在回答 WHY 类型问题的过程中，你不但需要动用分析、推理、归纳、总结等各种思维能力，可能还要运用到跨领域、跨学科的知识。但是收获也是很大的。一旦把这些 WHY 类型的问题想明白，你就对整个事件有一个既宏观又深刻的认识。<br/>　　能达到这个境界，看问题通常会比较深刻。可惜这样的人比例太低了 :(<br/><br/><h3 class="sigil_not_in_toc">◇WHY【之后】可以做啥？</h3>
-<br/>　　可能有人会问：达到 WHY 境界之后，又该如何？所以俺补充了这一小节。<br/>　　当你经历了 WHY 层次之后，你可以回过头，再用 WHAT 方式【重新审视】这个事物。这时候看到的信息同你一开始用 WHAT 方式看到的信息，已经【迥然不同】啦。因为你一开始看到的是【表象】，而现在你已经能看到【本质】了。<br/>　　如果你愿意的话，你还可以开始思考解决之道。说到“如何解决问题”，这又是另一个很大的领域，已经超出本文的范畴——本文讲的是“如何认知”。要想学习“如何解决”，强烈建议大伙儿看一下<a href="../../2009/07/book-review-are-your-lights-on.html">书评：《你的灯亮着吗？——找到问题的真正所在》</a>，非常经典！<br/><br/><br/><h2 class="sigil_not_in_toc">★以“楼市”为例</h2>
-<br/>　　前面说了一大通抽象的方法论，估计有些同学看着都要打瞌睡了。为了给大伙儿加深印象，俺拿个具体的例子来运用一下。考虑到这几年来，高房价是大伙儿的心病，俺就拿天朝的房地产市场来说事儿。<br/><br/><h3 class="sigil_not_in_toc">◇WHAT</h3>
-<br/>　　首先要了解：时间、地点、当事人（这很容易）。<br/>时间: 最近10年<br/>地点: 天朝<br/>当事人: 开发商、购房者、政府<br/>至于事情经过，大伙儿应该也清楚：<br/>开发商: 天朝所有的开发商都在涨价（个别地方甚至涨了好几倍）<br/>购房者: 大多数购房者无力支付高房价，怨声载道。<br/>政府: 近两年来，朝廷出台了各种措施。一方面控制销售方（对开发商限价），另一方面控制购买方（对民众限购）。<br/><br/>　　从【表面上】看，貌似政府真的很想把房价控制住；从【表面上】看，貌似开发商榨取了买房者的血汗钱。<br/>　　估计很多人的认识就仅仅停留在上述水平（也就是 WHAT 层次）。<br/><br/><h3 class="sigil_not_in_toc">◇HOW</h3>
-<br/>　　如果你进入到 HOW 层面，就应该继续思考......<br/>1. 由于“价格”是天朝楼市的焦点所在，而楼价是开发商定的。那么，开发商是【如何】定出这个价格的？<br/>2. 开发商，顾名思义，首先是商人。而商人，自然是要赚钱滴。通俗滴说，卖楼得到的钞票必须大于盖楼花掉的钞票，它才有得赚。所以，你就需要继续思考：开发商盖楼的钱是【如何】花的？<br/>3. 稍微 Google 一下，不难发现，盖楼的成本主要有：土地成本、建材成本、劳动力成本、税收成本、其它成本（各种杂费）。这几项成本中，土地成本和税收成本是增长最快的。再稍微查一下 Google，你还会发现，土地成本占了开发商总成本的很大比例（据说比例高的，竟然达到59%）。另外，税收成本的比例也不低。<br/>4. 在天朝，所有土地皆国有。那开发商买地花掉的钱，都进了谁的口袋？各位用膝盖想一下，自然就明白啦。<br/><br/>　　因此，想清楚这个层次的同学，就不会再把矛盾的焦点简单地对准开发商。当然啦，黑心的开发商也有不少，但是跟朝廷比起来，再黑心的开发商也是小巫见大巫。<br/><br/><h3 class="sigil_not_in_toc">◇WHY</h3>
-<br/>　　如果你进入到 WHY 层面，可以思考的问题就更多了。比如：<br/>【为什么】政府要把土地卖得这么贵捏？<br/>土地这么贵了，【为什么】开发商还敢买捏？<br/>开发商发售的楼盘这么贵了，【为什么】还有人要捏？<br/>【为什么】很多人宁可买房也不肯租房捏？<br/>......<br/>　　请问，上述这几个问题，哪一个切中要害？俺认为是第一个问题——“为啥政府把地卖得这么贵”。<br/>　　为了回答这个问题，你可以从如下几个角度去分析：<br/>所有权的因素（天朝的土地是国有的）<br/>财政收入的因素（卖地的钱成为各地财政收入的大头）<br/>腐败的因素（天晓得这其中有多少钱变成了官员们的灰色收入）<br/>GDP 的因素（GDP 增长率已经成为地方政府的面子工程）<br/>通胀的因素<br/>......<br/>　　大伙儿请注意，上述的每一个因素，所起的作用有大有小。这时候，你要思考的就是：哪些因素是关键因素（决定性因素）？<br/>　　（考虑到篇幅有限，俺就不一一展开分析了，直接说说俺的观点）<br/>　　关键因素就是政治制度（别的因素都是由它引起的）。天朝的政治制度（一党专政、权力过度集中、缺乏监管）必然会衍生出权贵阶层；权贵阶层利用手中的权力来掠夺民众的财富（权力寻租、权钱交易）；而楼市只不过是财富转移的途径之一（稍微跑题一下：其实天朝的股市，也在起着类似的作用）。<br/>　　稍微跑题一下，如果想知道天朝的权贵阶层有多牛B，请看俺的<a href="../05/revolution-4.html">另一篇博文</a>。<br/><br/>　　俺前面说过：要回答某个【深层次】的 WHY 类型问题，多半会涉及到跨学科、跨领域。关于“高房价”的问题，表面上属于房地产行业；一旦深入思考，却牵扯到政治制度。显然，那些浅层思维的人，往往看不到问题的本质。所以才会有很多人还在用所谓的“刚性需求”、所谓的“土地稀缺”来解释高房价。当然啦，也不排除某些别有用心的人揣着明白装糊涂，故意误导大家。<br/><br/><br/><h2 class="sigil_not_in_toc">★总结</h2>
-<br/>　　人类之所以能够从众多动物中脱颖而出，关键在于人类更擅长于思考；同样的，某个人之所以能从社会中脱颖而出，善于思考往往是重要因素（但不是唯一因素）。所以，列位看官不要仅仅满足于快餐文化，经常多动脑子，看问题千万不要流于表面！<br/>　　最后，引用哲学鼻祖苏格拉底的名言作本文的结尾：<br/><blockquote><b>未经反思自省的人生不值得去过。<br/>The unexamined life is not worth living.</b></blockquote>
-<br/><br/><b>俺博客上，和本文相关的帖子（需翻墙）</b>：<br/><br/>《<a href="../../2009/02/study-technology-in-three-steps.html">学习技术的三部曲：WHAT HOW WHY</a>》<br/>《<a href="../../2019/10/Systematic-Learning.html">如何【系统性学习】——从“媒介形态”聊到“DIKW 模型”</a>》<br/>《<a href="../../2013/09/knowledge-structure.html">如何完善自己的知识结构</a>》<br/>《<a href="../../2009/07/book-review-are-your-lights-on.html">书评：＜你的灯亮着吗？——找到问题的真正所在＞</a>》<br/>《<a href="../../2019/03/Why-Thinking-Hard-So-Hard.html">为什么独立思考这么难？——谈谈心理学的成因，并分享俺的经验</a>》<br/>《<a href="../../2013/05/difference-between-fact-and-opinion.html">批判性思维扫盲：学会区分“事实”与“观点”</a>》<br/>《<a href="../../2015/05/Survivorship-Bias.html">思维的误区：幸存者偏见——顺便推荐巴菲特最著名的演讲</a>》<br/>《<a href="../../2010/07/silent-proof.html">思维的误区：忽视沉默的大多数</a>》<br/>《<a href="../../2009/02/from-surface-to-essence.html">学会透过现象看本质，即使现象有时候挺诡异</a>》<div class="blogger-post-footer">
-</div>
-</div>
-]]></description>
-    <pubDate>Mon, 25 May 2026 03:37:31 +0000</pubDate>
-    <guid isPermaLink="false">9</guid>
 </item>
 </channel>
 </rss>
